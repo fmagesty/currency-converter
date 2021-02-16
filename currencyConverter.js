@@ -2,8 +2,8 @@
 function convDol(n) {
     n = document.getElementById('brl-input').value;
     n /= 5.37;
-    // n = Math.round(n); // if needed to round the value
-    document.getElementById('result').textContent = 'Value in dollar: $' + n;
+    n = n.toFixed(2); // round the value with 2 decimals
+    document.getElementById('result').textContent = 'Value in dollar: $' + n; //displays the result
     return n;
 }
 
