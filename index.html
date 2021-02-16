@@ -10,9 +10,11 @@
 <body>
     <h1>Currency Converter</h1>
     <div class="container">
-        <input type="number" class="brl-input" placeholder="Value in BRL">
-        <div class="button-container"><button>Convert to Dol</button></div>
-        <div class="result"></div>
+        <input type="number"  id="brl-input" class="brl-input" placeholder="Value in BRL">
+        <div class="button-container" onclick="convDol()"><button>Convert to Dol</button>
+    <div>
+        <div class="result" id="result" placeholder="The result appears here">Result</div>
     </div>
+    <script src="./currencyConverter.js"></script>
 </body>
 </html>
