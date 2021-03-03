@@ -32,3 +32,10 @@ h2 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.converter {
+  background-color: #191923;
+  color: white;
+}
+span {
+  color: blueviolet;
+}
