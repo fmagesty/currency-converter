@@ -10,27 +10,33 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <h1>Currency Converter</h1> 
-    <div class="dropdown">
-        <button class="dropbtn">Select currency</button>
-        <div class="dropdown-content">
-            <button id="BRL" onclick="convCur('BRL')">BRL</button>
-            <button id="USD" onclick="convCur('USD')">USD</button>
-            <button id="EUR" onclick="convCur('EUR')">EUR</button>
-            <button id="JPY" onclick="convCur('JPY')">JPY</button>
-            <button id="GBP" onclick="convCur('GBP')">GBP</button>
-            <button id="CHF" onclick="convCur('CHF')">CHF</button>
-            <button id="CAD" onclick="convCur('CAD')">CAD</button>
-            <button id="AUD" onclick="convCur('AUD')">AUD</button>
-            <button id="ZAR" onclick="convCur('ZAR')">ZAR</button>
+    <h1>Conversor de moedas</h1>
+    <h2>Selecione as moedas</h2>
+    <div class="all">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="entrada" data-bs-toggle="dropdown" aria-expanded="false">Moeda de entrada</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#" id="BRL1" onclick="clickDropdown1('BRL1')">BRL</a></li>
+                <li><a class="dropdown-item" href="#" id="USD1" onclick="clickDropdown1('USD1')">USD</a></li>
+                <li><a class="dropdown-item" href="#" id="EUR1" onclick="clickDropdown1('EUR1')">EUR</a></li>
+            </ul>
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="saida" data-bs-toggle="dropdown"
+                aria-expanded="false">Moeda de saída</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#" id="BRL2" onclick="clickDropdown2('BRL2')">BRL</a></li>
+                <li><a class="dropdown-item" href="#" id="USD2" onclick="clickDropdown2('USD2')">USD</a></li>
+                <li><a class="dropdown-item" href="#" id="EUR2" onclick="clickDropdown2('EUR2')">EUR</a></li>
+            </ul>
         </div>
-    </div>
-    <div class="container">
-        <input type="number"  id="val-input" class="val-input" placeholder="Enter a value">
-        <div id="USD" class="button-container" onclick="convCur('USD')"><button>Convert to USD</button>
-    <div>
-        <div class="result" id="result" placeholder="The result appears here">Result</div>
-    </div>
+        <h2>Digite o valor desejado</h2>
+        <input type="input" placeholder="Valor a ser convertido" id="val-input">
+        <button class="converter" id="converter" onclick="convCur([entrada.innerHTML])">Converter</button>
+        <div>
+            <button class="result" id="result">Resultado</button>
+        </div>
+        <h3>Feito com boostrap</h3>
+        <h4>github.com/fmagesty</h4>
+        </div>
     <script src="./currencyConverter.js"></script>
     <!-- BOOSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

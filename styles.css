@@ -1,78 +1,34 @@
-.container {
-  width: 300px;
-  margin: 0 auto;
+body {
   margin: auto;
-  width: 50%;
-  padding: 100px;
+}
+.all {
   text-align: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  color: midnightblue;
 }
 h1 {
-  text-align: center;
-}
-.val-input {
-  margin: auto;
-  width: 50%;
   padding: 10px;
-  text-align: center;
 }
-.button-container {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  text-align: center;
-  margin-top: 50px;
+h2 {
+  padding: 40px;
 }
-.result {
-  border: black solid;
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  text-align: center;
-  margin-top: 50px;
-}
-.dropbtn {
-  background-color: #4caf50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  width: 300px;
-  margin: 0 auto;
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  text-align: center;
-}
-
-.dropdown-content {
-  display: none;
-  position: relative;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.dropdown-content a {
+.btn {
+  background-color: white;
   color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  margin-right: 50px;
+  align-self: center;
 }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
+.dropdown {
+  display: inline-block;
+  text-align: center;
 }
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+#result {
+  border: solid black;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
