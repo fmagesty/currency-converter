@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency Converter</title>
+    <!-- BOOSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"             integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <h1>Currency Converter</h1>
+    <h1>Currency Converter</h1> 
+    <div class="dropdown">
+        <button class="dropbtn">Select currency</button>
+        <div class="dropdown-content">
+            <button id="BRL" onclick="convCur('BRL')">BRL</button>
+            <button id="USD" onclick="convCur('USD')">USD</button>
+            <button id="EUR" onclick="convCur('EUR')">EUR</button>
+            <button id="JPY" onclick="convCur('JPY')">JPY</button>
+            <button id="GBP" onclick="convCur('GBP')">GBP</button>
+            <button id="CHF" onclick="convCur('CHF')">CHF</button>
+            <button id="CAD" onclick="convCur('CAD')">CAD</button>
+            <button id="AUD" onclick="convCur('AUD')">AUD</button>
+            <button id="ZAR" onclick="convCur('ZAR')">ZAR</button>
+        </div>
+    </div>
     <div class="container">
-        <input type="number"  id="brl-input" class="brl-input" placeholder="Value in BRL">
-        <div class="button-container" onclick="convDol()"><button>Convert to Dol</button>
+        <input type="number"  id="val-input" class="val-input" placeholder="Enter a value">
+        <div id="USD" class="button-container" onclick="convCur('USD')"><button>Convert to USD</button>
     <div>
         <div class="result" id="result" placeholder="The result appears here">Result</div>
     </div>
     <script src="./currencyConverter.js"></script>
+    <!-- BOOSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 </body>
 </html>
