@@ -1,5 +1,6 @@
 body {
   margin: auto;
+  background-color: #191923;
 }
 .all {
   text-align: center;
@@ -9,7 +10,7 @@ h2,
 h3,
 h4 {
   text-align: center;
-  color: midnightblue;
+  color: #0e79b2;
 }
 h1 {
   padding: 10px;
@@ -33,8 +34,8 @@ h2 {
   margin-bottom: 50px;
 }
 .converter {
-  background-color: #191923;
-  color: white;
+  background-color: #fbfef9;
+  color: black;
 }
 span {
   color: blueviolet;
