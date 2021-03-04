@@ -19,14 +19,14 @@ const convCur = async (curr) => {
 
     const toRatio = async (curr2) => {
         const response = await fetch(`https://api.exchangeratesapi.io/latest?base=${saida.innerHTML}`)
-        console.log(response); //////
         const responseBody = await response.json();
         return responseBody.rates[curr];
     }
     
     const ratioResult = await toRatio();
-    const result = (inputVal/ratioResult);
-    document.getElementById('result').textContent = `$${result.toFixed(2)}`;
+    const result = (inputVal/ratioResult).toFixed(2);
+    console.log(result.toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' })) // NOT WORKING FOR SOME REASON
+    document.getElementById('result').textContent = `$${result}`;
 }
 
 

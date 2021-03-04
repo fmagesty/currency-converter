@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+
 body {
   margin: auto;
   background-color: #191923;
+  font-family: "Montserrat", sans-serif;
 }
 .all {
   text-align: center;
@@ -34,9 +37,17 @@ h2 {
   margin-bottom: 50px;
 }
 .converter {
-  background-color: #fbfef9;
-  color: black;
+  background-color: #00b386;
+  color: #fff;
 }
 span {
   color: blueviolet;
+}
+img {
+  float: left;
+}
+li {
+  height: auto;
+  padding: 10px;
+  display: flex;
 }
