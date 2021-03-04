@@ -24,9 +24,22 @@ const convCur = async (curr) => {
     }
     
     const ratioResult = await toRatio();
-    const result = (inputVal/ratioResult).toFixed(2);
-    console.log(result.toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' })) // NOT WORKING FOR SOME REASON
-    document.getElementById('result').textContent = `$${result}`;
+    let result = (inputVal/ratioResult);
+
+    // Make const result show on the selected currency
+    if (saida.innerHTML == 'BRL') {
+        result = result.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+    if (saida.innerHTML == 'USD') {
+        result = result.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    }
+    if (saida.innerHTML == 'EUR') {
+        result = result.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
+    }
+    
+
+    // Prints the final result
+    document.getElementById('result').textContent = `${result}`;
 }
 
 
