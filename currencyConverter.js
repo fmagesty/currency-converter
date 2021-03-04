@@ -22,10 +22,13 @@ const convCur = async (curr) => {
         const responseBody = await response.json();
         return responseBody.rates[curr];
     }
-    
+
     const ratioResult = await toRatio();
     let result = (inputVal/ratioResult);
-
+    // Check to see if entrada == saida
+    if (entrada.innerHTML == saida.innerHTML) {
+        result = 'Ambas moedas são iguais. Tente uma moeda diferente.'
+    }
     // Make const result show on the selected currency
     if (saida.innerHTML == 'BRL') {
         result = result.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
@@ -36,29 +39,9 @@ const convCur = async (curr) => {
     if (saida.innerHTML == 'EUR') {
         result = result.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
     }
-    
-
     // Prints the final result
     document.getElementById('result').textContent = `${result}`;
 }
-
-
-
-/// KEEPING THIS JUST IN CASE XD
-// // Function that converts CURRENCY
-// const convCur = async (curr) => {
-//     const inputVal = document.getElementById('val-input').value;
-
-//     const toRatio = async () => {
-//         const response = await fetch('https://api.exchangeratesapi.io/latest')
-//         const responseBody = await response.json();
-//         return responseBody.rates[curr];
-//     }
-    
-//     const ratioResult = await toRatio();
-//     const result = (inputVal/ratioResult);
-//     document.getElementById('result').textContent = `$${result.toFixed(2)}`;
-// }
 
 
 
