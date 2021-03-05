@@ -5,18 +5,29 @@ body {
   background-color: #191923;
   font-family: "Montserrat", sans-serif;
 }
+svg {
+  color: white;
+}
+.main-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .all {
   text-align: center;
 }
 h1 {
   text-align: center;
   color: #f39237;
+  font-size: 5rem;
 }
 h2,
 h3,
 h4 {
   text-align: center;
   color: #0e79b2;
+  padding: 10px;
 }
 h1 {
   padding: 10px;
@@ -24,15 +35,20 @@ h1 {
 h2 {
   padding: 40px;
 }
+h3 {
+  margin-top: 10rem;
+}
 .btn {
-  background-color: white;
-  color: black;
-  margin-right: 50px;
-  align-self: center;
+  background-color: #bf1363;
+  color: #fbfef9;
+  margin: 10px;
+}
+#arrow-icon {
+  margin: 10px;
 }
 .dropdown {
-  display: inline-block;
-  text-align: center;
+  display: inline-flex;
+  justify-content: space-around;
 }
 #result {
   border: solid black;
@@ -40,8 +56,8 @@ h2 {
   margin-bottom: 50px;
 }
 .converter {
-  background-color: #00b386;
-  color: #fff;
+  background-color: #bf1363;
+  color: #fbfef9;
 }
 span {
   color: blueviolet;
@@ -53,4 +69,11 @@ li {
   height: auto;
   padding: 10px;
   display: flex;
+}
+.footer {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
