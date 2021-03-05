@@ -54,13 +54,15 @@ h3 {
   border: solid black;
   margin-top: 50px;
   margin-bottom: 50px;
+  background-color: white;
+  color: black;
 }
 .converter {
   background-color: #bf1363;
   color: #fbfef9;
 }
 span {
-  color: blueviolet;
+  color: #9b51e0;
 }
 img {
   float: left;
